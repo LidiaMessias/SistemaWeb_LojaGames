@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Games - Home</title>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+
+<body>
+
+    <img id="Joystick-img" th:src="@{/images/joy_stick 1.png}" alt="Imagem de um Joystick">
+    <img id="info-malha" th:src="@{/images/Group 21.png}" alt="Imagem de uma malha de pontinhos laranja">
+
+    <header>
+        <div class="header">
+            <div>
+                <span id="logo">LOGO</span>
+            </div>
+            <nav class="header-navigation">
+                <div class="nav-elements">
+                    <ul>
+                        <li class="ul-login"><a th:href="@{/}">Home</a></li>
+                        <li class="ul-login"><a th:href="@{/error}">About us</a></li>
+                        <li class="ul-login relative"><a href="#" onclick="toggleSubMenu(event)" class="focus:outline-none">Jogos</a></li>
+                        <li class="ul-login" id="btn-contact"><a th:href="@{/contact}" >Contact us</a></li> 
+                        <li><a th:href="@{/login}" style="padding-top: 20px;" id="login-hover">
+                                <img th:src="@{/images/User_fill.png}" alt="Login icon">
+                            </a>
+                        </li>
+                    </ul>                           
+                </div>
+            </nav>
+        </div>
+        <!--Submenu-->
+        <ul id="submenu" class="hidden absolute text-white mt-2 ml-4 p-2 rounded shadow-xl shadow-blue-950/90 shadow-inner" style="right: 350px; top: 80px;">
+            <li><a th:href="@{/cadastroJogos}" class="block px-4 py-2 rounded hover:bg-orange-500 ">Cadastrar</a></li>
+            <li><a th:href="@{/listaJogos}" class="block px-4 py-2 rounded hover:bg-orange-500 ">Listar</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="works-section">
+            <div class="works-div">
+                <span class="works-span">Proved By prodesigner</span>
+                <h1>Work that we produce for our clients</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                <div id="details">
+                    <a th:href="@{/error}">Get more details</a>
+                </div>
+            </div>
+
+            <div class="partners">
+                <img th:src="@{/images/Component 1.png}" alt="Logotipos de Empresas Parceiras">
+            </div>
+        </section>
+
+        <section class="curgames-section">
+            <div class="curgames-header">
+                <h2>Currently Trending Games</h2>
+                <div class="btn-button">
+                    <a th:href="@{/listaJogos}">SEE ALL</a>
+                </div>
+                
+            </div>
+
+            <div class="games">
+                <div class="game-card">
+                    <img th:src="@{/images/game_01.png}" alt="Imagem do Game 01">
+                    <span class="card-span">
+                        <img th:src="@{/images/fire 1.png}" alt="Imagem de uma chama de fogo">
+                        <span>40 Followers</span>
+                    </span>
+                </div>
+                <div class="game-card">
+                    <img th:src="@{/images/game_02.png}" alt="Imagem do Game 02">
+                    <span class="card-span">
+                        <img th:src="@{/images/fire 1.png}" alt="Imagem de uma chama de fogo">
+                        <span>40 Followers</span>
+                    </span>
+                </div>
+                <div class="game-card">
+                    <img th:src="@{/images/game_03.png}" alt="Imagem do Game 03">
+                    <span class="card-span">
+                        <img th:src="@{/images/fire 1.png}" alt="Imagem de uma chama de fogo">
+                        <span>40 Followers</span>
+                    </span>
+                </div>
+                <div class="game-card">
+                    <img th:src="@{/images/game_04.png}" alt="Imagem do Game 04">
+                    <span class="card-span">
+                        <img th:src="@{/images/fire 1.png}" alt="Imagem de uma chama de fogo">
+                        <span>40 Followers</span>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="information-section">        
+            <div class="information-title">
+                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+            </div>
+
+            <div class="information-div">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+
+            <div class="info-img">
+                <img id="info-image" th:src="@{/images/Rectangle 4.png}" alt="Imagem do Homem Aranha caindo">
+                
+            </div>  
+            
+        </section>
+
+        
+        <section class="game-solutions">
+            
+            <div class="gamesol-title">
+                <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+
+            <div>
+
+                <div id="gamesol-part1">
+                    <div class="gamesol-card">
+                        <img th:src="@{/images/Group 48.png}" alt="Imagem de um Smartphone">
+                        <span>Mobile Game Development</span>
+                        <img th:src="@{/images/arrow 1.png}" alt="Imagem de uma seta de navegação.">
+                    </div>
+
+                    <div class="gamesol-card">
+                        <img th:src="@{/images/Group 49.png}" alt="Imagem de um Computador Desktop">
+                        <span>PC Game Development</span>
+                        <img th:src="@{/images/arrow 1.png}" alt="Imagem de uma seta de navegação.">
+                    </div>
+
+                    <div class="gamesol-card">
+                        <img th:src="@{/images/Group 50.png}" alt="Imagem do logo do PS4">
+                        <span>PS4 Development</span>
+                        <img th:src="@{/images/arrow 1.png}" alt="Imagem de uma seta de navegação.">
+                    </div>
+
+                    <div class="gamesol-card">
+                        <img th:src="@{/images/Group 51.png}" alt="Imagem de um óculos de Realidade Virtual">
+                        <span>AR/VR Solutions</span>
+                        <img th:src="@{/images/arrow 1.png}" alt="Imagem de uma seta de navegação.">
+                    </div>
+
+                </div>
+                <div id="gamesol-part2">   
+                    <div class="gamesol-card">
+                        <img th:src="@{/images/Group 52.png}" alt="Imagem de projeto de Realidade Virtual">
+                        <span>AR/VR Design</span>
+                        <img th:src="@{/images/arrow 1.png}" alt="Imagem de uma seta de navegação.">
+                    </div>
+
+                    <div class="gamesol-card">
+                        <img th:src="@{/images/Group 53.png}" alt="Imagem de um desenho relativo a modelagem 3D">
+                        <span>3D Modelings</span>
+                        <img th:src="@{/images/arrow 1.png}" alt="Imagem de uma seta de navegação.">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="recent-projects">
+
+            <div class="recent-princ">
+                <div class="recent-titles">
+                    <h2>Our Recent Projects</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+                <div class="recent-cards">
+                    <img th:src="@{/images/Rectangle 15.png}" alt="Cenário de um jogo.">
+                    <img th:src="@{/images/Rectangle 16.png}" alt="Cenário de um jogo.">
+                    <img th:src="@{/images/Rectangle 17.png}" alt="Cenário de um jogo.">
+                    <img th:src="@{/images/Rectangle 19.png}" alt="Imagem da tela inicial de um jogo.">
+                    <img th:src="@{/images/Rectangle 18.png}" alt="Cenário de um jogo.">
+                    <img th:src="@{/images/Rectangle 20.png}" alt="Cenário de um jogo.">
+                </div>
+
+                <div class="btn-button">
+                    <a th:href="@{/error}">SEE ALL</a>
+                </div>
+            </div>
+
+            <div class="recent-info-title">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+
+            <div id="recent-subs">
+                <div class="recent-info pt-9">
+                    <h2>Stay in the loop</h2>
+                    <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you! </p>
+                </div>
+
+                <div class="recent-container">
+                    <div class="recent-subs-form">
+                        <form action="" method="post" class="form-email">
+                            <input id="email-recentproj" type="email" placeholder="Enter email address">
+                            <button type="submit" id="email-btn">Continue</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-1">
+                <span id="logo-footer">LOGO</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <span>@Logo</span>
+            </div>
+
+            <div class="footer-2">
+                <a class="about-us">About us</a>
+                <ul>
+                    <li><a href="">Zeux</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-3">
+                <span class="contact-us">Contact us</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <span>+908 89097 890</span>
+            </div>
+
+            <div class="footer-4">
+                <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="social-icon" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-5">
+            <span>Copyright ® 2021 Lorem All rights Rcerved</span>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/home.js}"></script>
+    <script th:src="@{/js/menu.js}"></script>
+
+</body>
+</html>

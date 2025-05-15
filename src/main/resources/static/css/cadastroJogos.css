@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, #2211E7, #383837);
+    font-size: 16px;
+}
+
+#Joystick-img {
+    position: absolute;
+    top: -70px;
+    right: 45px;
+    z-index: -10;
+}
+
+.game-img {
+    width: 320px;
+    height: 402px;
+}
+
+#btn-cad {
+    background-color: rgba(255, 255, 255, 0.1);
+}

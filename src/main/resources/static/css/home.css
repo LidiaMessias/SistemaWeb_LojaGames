@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #39289F, #422F9C );
+    font-size: 16px;
+}
+
+#Joystick-img {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    z-index: -10;
+}
+
+#img-ative {
+    position: absolute;
+    top: 83px;
+    left: 605px;
+    z-index: -10;
+}
+
+#info-malha {
+    position: absolute;
+    top: 1760px;
+    right: 212px;
+}
+
+.works-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 120px;
+}
+
+.works-div {
+    width: 520px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+.works-span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E87D0E;
+    -webkit-text-stroke: 1px #000;
+    margin-top: 20px;
+}
+
+.works-div h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 155%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.works-div p {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#details {
+    width: 195px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #FA8305, #FB9E3C);
+    border-radius: 40px;
+    border: none;
+}
+
+#details>a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.partners {
+    padding-top: 20px;
+    padding-right: 110px;
+}
+
+.partners img {
+    max-width: 578px;
+    max-height: 237px;
+
+}
+
+.curgames-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 150px 120px 130px 120px;
+    padding: 0 15px;
+}
+
+.curgames-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 50px;
+}
+
+.games {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curgames-header h2{
+    font-size: 31px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn-button {
+    width: 140px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-button>a {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.card-span {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.card-span>span {
+    margin-left: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.information-section {
+    margin: 0px 80px 50px 80px;
+    padding: 0 50px;
+    position: relative;
+}
+
+.information-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.information-section h2 {
+    width: 825px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.information-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 545px;
+    max-height: 175px;
+    color: #FFFFFF;
+}
+
+.information-div h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.info-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.info-image {
+    max-width: 1090px;
+}
+
+.game-solutions {
+    width: 100%;
+    margin: 150px 0px 130px 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), 
+                      url("/assets/images/cenario_jogo.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.gamesol-title {
+    max-width: 826px;
+    max-height: 200px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.gamesol-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#gamesol-part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gamesol-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.gamesol-card {
+    width: 220px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: auto 30px;
+}
+
+#recent-projects {
+    margin: 0px 80px 160px 80px;
+    padding: 0 10px;
+
+}
+
+.recent-princ {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    align-items: center;
+}
+
+.recent-titles {
+    width: 500px;
+    height: 130px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.recent-titles h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.recent-titles p {
+    font-size: 14px;
+}
+
+.recent-cards {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 35px;
+    flex-wrap: wrap;
+}
+
+.recent-info-title {
+    margin-top: 100px;
+    max-width: 545px;
+    color: #FFFFFF;
+}
+
+.recent-info-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#recent-subs {
+    height: 190px;
+    background-color: #1C140F;
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 70px;
+}
+
+.recent-info {
+    width: 600px;
+    color: #FFFFFF;
+}
+
+.recent-info h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.recent-info p {
+    font-size: 17px;
+}
+
+.recent-container {
+    display: flex;
+    align-items: center;
+}
+
+.recent-subs-form {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 385px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    row-gap: 100px;
+}
+
+#email-recentproj {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 10px;
+    padding-left: 20px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    color: #898989;
+    margin-right: 37px;
+}
+
+.recent-subs-form button {
+    width: 105px;
+    height: 37px;
+    border: none;
+    border-radius: 8px;
+    background-color: #DC7000;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.recent-subs-form button:hover {
+    cursor:pointer;
+    background-color: #FAA246;
+    font-weight: 600;
+    color: #383837;
+}
+
