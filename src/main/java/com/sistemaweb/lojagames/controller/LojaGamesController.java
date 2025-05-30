@@ -38,6 +38,11 @@ public class LojaGamesController {
         return "login";
     }
 
+    @GetMapping("/aboutus")
+    public String aboutus() {
+        return "aboutus";
+    }
+
     @GetMapping("/jogos") // Mapeia para GET /jogos
     public String listJogos(Model model) {
         List<Jogos> jogos = jogosService.getAllGames();
