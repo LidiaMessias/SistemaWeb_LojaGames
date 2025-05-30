@@ -21,7 +21,7 @@
                 <div class="nav-elements">
                     <ul>
                         <li class="ul-login"><a th:href="@{/}">Home</a></li>
-                        <li class="ul-login"><a th:href="@{/error}">About us</a></li>
+                        <li class="ul-login"><a th:href="@{/aboutus}">About us</a></li>
                         <li class="ul-login relative"><a href="#" onclick="toggleSubMenu(event)" class="focus:outline-none">Jogos</a></li>
                         <li id="btn-contact" class="ul-login"><a th:href="@{/contact}" >Contact us</a></li> 
                         <li><a th:href="@{/login}" style="padding-top: 20px;" id="login-hover">
@@ -34,8 +34,8 @@
         </div>
         <!--Submenu-->
         <ul id="submenu" class="hidden absolute text-white mt-2 ml-4 p-2 rounded shadow-xl shadow-blue-950/90 shadow-inner" style="right: 350px; top: 80px;">
-            <li><a th:href="@{/cadastroJogos}" class="block px-4 py-2 rounded hover:bg-orange-500 ">Cadastrar</a></li>
-            <li><a th:href="@{/listaJogos}" class="block px-4 py-2 rounded hover:bg-orange-500 ">Listar</a></li>
+            <li><a th:href="@{/jogos/novo}" class="block px-4 py-2 rounded hover:bg-orange-500 ">Cadastrar</a></li>
+            <li><a th:href="@{/jogos}" class="block px-4 py-2 rounded hover:bg-orange-500 ">Listar</a></li>
         </ul>
     </header>
 
