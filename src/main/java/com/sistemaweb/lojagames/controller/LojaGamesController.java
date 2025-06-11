@@ -60,7 +60,7 @@ public class LojaGamesController {
 
     // Rota para exibir o formulário de EDIÇÃO de jogo existente
     @GetMapping("/jogos/editar/{id}") // Mapeia para GET /jogos/editar/{id}
-    public String showEditForm(@PathVariable("id") Long id, Model model, RedirectAttributes redirectAttributes) {
+    public String showEditForm(@PathVariable Long id, Model model, RedirectAttributes redirectAttributes) {
         Optional<Jogos> jogosOptional = jogosService.getGameById(id);
 
         if (jogosOptional.isPresent()) {
@@ -95,7 +95,7 @@ public class LojaGamesController {
 
     // Rota para DELETAR um jogo
     @GetMapping("/jogos/deletar/{id}") // Mapeia para GET /jogos/deletar/{id}
-    public String deleteGame(@PathVariable("id") Long id, RedirectAttributes redirectAttributes) {
+    public String deleteGame(@PathVariable Long id, RedirectAttributes redirectAttributes) {
         boolean deleted = jogosService.deleteGame(id);
         if (deleted) {
             redirectAttributes.addFlashAttribute("successMessage", "Jogo excluído com sucesso!");
