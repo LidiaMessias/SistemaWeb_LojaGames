@@ -89,7 +89,7 @@ public class LojaGamesController {
         }
 
         jogosService.saveGame(jogos);
-        //redirectAttributes.addFlashAttribute("successMessage", "Jogo salvo com sucesso!");
+        redirectAttributes.addFlashAttribute("successMessage", "Jogo salvo com sucesso!");
         return "redirect:/jogos";
     }
 

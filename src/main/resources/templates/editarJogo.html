@@ -44,8 +44,12 @@
 
     <div>
         <div class="flex align-center max-w-full ">
-          <form th:action="@{'/editarJogo/' + ${id}}" method="post" th:object="${jogos}" enctype="multipart/form-data" class="pl-60 pt-10 pb-32">
-            
+          <!--<form th:action="@{'/editarJogo/' + ${id}}" method="post" th:object="${jogos}" enctype="multipart/form-data" class="pl-60 pt-10 pb-32">-->
+
+          <form th:action="@{/jogos/salvar}" method="post" th:object="${jogos}" enctype="multipart/form-data" class="pl-60 pt-10 pb-32">
+            <!-- Campo oculto para enviar o ID do jogo -->
+            <input type="hidden" th:field="*{id}" />
+
             <div class="flex flex-col gap-6 justify-center">
   
               <div class="border-b-2 border-gray-300">
